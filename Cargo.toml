@@ -1,0 +1,18 @@
+[package]
+name = "celllab2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = { version = "0.37", default-features = false, features = ["default_fonts", "wgpu", "x11", "wayland"] }
+flate2 = "1"
+rand = "0.9"
+png = "0.18"
+rayon = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

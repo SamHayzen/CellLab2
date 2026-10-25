@@ -1,0 +1,10 @@
+/target/
+/dist/
+/asm-experiment/
+/.codex/
+/reference/decompiled/
+/reference/fixtures/
+/reference/*.apk
+/reference/*.json
+/tools/
+*.celllab2
